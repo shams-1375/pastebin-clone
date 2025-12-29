@@ -12,7 +12,7 @@ function Home() {
 
         setLoading(true);
 
-        const res = await fetch("http://localhost:5000/api/paste", {
+        const res = await fetch("https://backend-6t71.onrender.com/api/paste", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -23,7 +23,7 @@ function Home() {
         });
 
         const data = await res.json();
-        setLink(`http://localhost:3000/paste/${data.id}`);
+        setLink(`https://backend-6t71.onrender.com/paste/${data.id}`);
         setLoading(false);
     };
 

@@ -7,7 +7,7 @@ function PasteView() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/paste/${id}`)
+    fetch(`https://backend-6t71.onrender.com/api/paste/${id}`)
       .then(res => res.json())
       .then(data => {
         if (data.error) setError(data.error);
