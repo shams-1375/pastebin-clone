@@ -23,7 +23,7 @@ function Home() {
         });
 
         const data = await res.json();
-        setLink(`https://backend-6t71.onrender.com/paste/${data.id}`);
+        setLink(`https://frontend-0dvm.onrender.com/paste/${data.id}`);
         setLoading(false);
     };
 
